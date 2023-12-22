@@ -122,14 +122,33 @@
 //   console.log((userName) + " " + (randomWord))
 // }
 // que()
+// //        Practice exercise 6.3
+var num1 = 10;
+var num2 = 5;
+var operator = "+";
+function performOperation(value1, value2, operator) {
+    if (operator === "+") {
+        return value1 + value2;
+    } else if (operator === "-") {
+        return value1 - value2;
+    } else {
+        console.log("Invalid operator. Defaulting to addition.");
+        return value1 + value2;
+    }
+}
+console.log("Result 1:", performOperation(num1, num2, operator));
+operator = "-";
+console.log("Result 2:", performOperation(num1, num2, operator));
+
+
 
 // //        Practice exercise 6.8
-var printNameFunction = function(name) {
-  console.log("Function Expression:", name);
-};
-printNameFunction("John")
-function printNameDeclaration(name) {
-  console.log("Function Declaration:", name);
-}
-printNameDeclaration("Jane");
+// var printNameFunction = function(name) {
+//   console.log("Function Expression:", name);
+// };
+// printNameFunction("John")
+// function printNameDeclaration(name) {
+//   console.log("Function Declaration:", name);
+// }
+// printNameDeclaration("Jane");
 
